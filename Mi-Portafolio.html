@@ -5,66 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mi Portafolio Personal Lauren Taborda</title>
+    <title>Mi Portafolio Personal LMTB</title>
 
     <!-- Conexión con Tailwind -->
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="font-sans bg-[#F8F7F2] text-[#263C35]">
 
     <!-- ENCABEZADO -->
-    <header class="bg-white shadow-sm">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
 
-        <nav class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4">
+    <nav class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
 
-            <!-- Nombre o marca personal -->
-            <a href="#inicio" class="text-2xl font-bold text-green-700">
-                Lauren.
-            </a>
+        <!-- LOGO Y MARCA PERSONAL -->
+            <img
+                src="./img/Logo.jpeg"
+                alt="Logo personal de Lauren"
+                class="w-12 h-12 object-contain"
+            >
 
-            <!-- Menú de navegación -->
-            <ul class="flex flex-wrap gap-5 text-sm font-medium">
+        <!-- MENÚ -->
+        <ul class="flex items-center gap-6 text-sm font-medium">
 
-                <li>
-                    <a href="#inicio" class="hover:text-green-700 transition">
-                        Inicio
-                    </a>
-                </li>
+            <li>
+                <a href="#sobre-mi" class="hover:text-green-700 transition">
+                    Sobre mí
+                </a>
+            </li>
 
-                <li>
-                    <a href="#sobre-mi" class="hover:text-green-700 transition">
-                        Sobre mí
-                    </a>
-                </li>
+            <li>
+                <a href="#proyectos" class="hover:text-green-700 transition">
+                    Proyectos
+                </a>
+            </li>
 
-                <li>
-                    <a href="#habilidades" class="hover:text-green-700 transition">
-                        Habilidades
-                    </a>
-                </li>
+            <li>
+                <a href="#contacto" class="hover:text-green-700 transition">
+                    Contacto
+                </a>
+            </li>
 
-                <li>
-                    <a href="#proyectos" class="hover:text-green-700 transition">
-                        Proyectos
-                    </a>
-                </li>
+        </ul>
 
-                <li>
-                    <a href="#contacto" class="hover:text-green-700 transition">
-                        Contacto
-                    </a>
-                </li>
+    </nav>
 
-            </ul>
-
-        </nav>
-
-    </header>
+</header>
     <main>
 
     <!-- PRESENTACIÓN PERSONAL -->
-    <section id="inicio" class="max-w-6xl mx-auto px-6 py-20">
+    <section id="Presentación" class="max-w-6xl mx-auto px-6 py-20">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -94,7 +84,7 @@
             <!-- FOTOGRAFÍA -->
             <div class="flex justify-center">
 
-                <img src="src/Foto perfil.jpg"
+                <img src="img/lauren.jpeg"
                     alt="Fotografía de Lauren Manuela"
                     class="w-72 h-80 object-cover rounded-2xl shadow-lg"
                 >   
