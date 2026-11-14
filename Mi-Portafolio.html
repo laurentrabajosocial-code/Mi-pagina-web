@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portafolio Lauren</title>
+    <title>Mi Portafolio Personal Lauren Taborda</title>
 
     <!-- Conexión con Tailwind -->
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-slate-100">
+<body class="bg-gray-50 text-gray-800">
 
-    <header class="bg-slate-900 text-white p-6">
-        <h1 class="text-3xl font-bold text-center">
-            Lauren Taborda
-        </h1>
+    <!-- ENCABEZADO -->
+    <header class="bg-white shadow-sm">
+
+        <nav class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4">
+
+            <!-- Nombre o marca personal -->
+            <a href="#inicio" class="text-2xl font-bold text-green-700">
+                Lauren.
+            </a>
+
+            <!-- Menú de navegación -->
+            <ul class="flex flex-wrap gap-5 text-sm font-medium">
+
+                <li>
+                    <a href="#inicio" class="hover:text-green-700 transition">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi" class="hover:text-green-700 transition">
+                        Sobre mí
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#habilidades" class="hover:text-green-700 transition">
+                        Habilidades
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#proyectos" class="hover:text-green-700 transition">
+                        Proyectos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto" class="hover:text-green-700 transition">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </header>
+    <main>
 
-    <main class="max-w-3xl mx-auto p-8">
+    <!-- PRESENTACIÓN PERSONAL -->
+    <section id="inicio" class="max-w-6xl mx-auto px-6 py-20">
 
-        <section class="bg-white rounded-xl shadow-lg p-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-            <h2 class="text-4xl font-bold text-blue-700">
-                ¡Hola, soy Lauren!
-            </h2>
+            <!-- TEXTO DE PRESENTACIÓN -->
+            <div>
 
-            <p class="text-gray-600 mt-4">
-                Estudiante de Desarrollo de Software
-            </p>
+                <p class="text-green-700 font-semibold mb-4">
+                    HOLA, BIENVENIDOS A MI PORTAFOLIO PERSONAL
+                </p>
 
-            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-blue-800">
-                Conoce mis proyectos
-            </button>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                     <span class="text-green-700">Soy Lauren Manuela Taborda Bedoya.</span>
+                </h1>
 
-        </section>
+                <h2 class="text-xl text-gray-600 mb-6">
+                    Profesioanal Trabajadora Social | Estudiante de Desarrollo de Software
+                </h2>
 
-    </main>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Me apasiona comprender al ser humano, explorar
+                    nuevos conocimientos y desarrollar soluciones
+                    que contribuyan al bienestar de las personas
+                    y al cuidado de nuestro entorno.
+                </p>
+
+
+            <!-- FOTOGRAFÍA -->
+            <div class="flex justify-center">
+
+                <img src="src/Foto perfil.jpg"
+                    alt="Fotografía de Lauren Manuela"
+                    class="w-72 h-80 object-cover rounded-2xl shadow-lg"
+                >   
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
 
 </body>
 </html>
