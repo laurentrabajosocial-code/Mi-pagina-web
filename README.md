@@ -6,7 +6,7 @@ editables.
 
 ## Archivos principales
 
-- `Mi-Portafolio.html`: página principal.
+- `index.html`: página principal.
 - `proyectos.html`: página de proyectos.
 - `img/lauren.jpeg`: foto mostrada en la página principal.
 - `src/input.css`: entrada de Tailwind CSS.
@@ -21,7 +21,7 @@ npm install
 npm run build
 ```
 
-Abre `Mi-Portafolio.html` en el navegador para visitar el inicio. La navegación
+Abre `index.html` en el navegador para visitar el inicio. La navegación
 permite ir a `proyectos.html`; el enlace de contacto lleva al pie de página de
 cualquiera de las dos páginas. En `proyectos.html`, reemplaza `#` en cada enlace
 «Ver proyecto» por la URL correspondiente.
