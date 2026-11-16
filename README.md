@@ -26,8 +26,7 @@ permite ir a `proyectos.html`; el enlace de contacto lleva al pie de página de
 cualquiera de las dos páginas. En `proyectos.html`, reemplaza `#` en cada enlace
 «Ver proyecto» por la URL correspondiente.
 
-El botón de WhatsApp abre una conversación para elegir destinatario. Para abrir
-directamente el chat propio, reemplaza su URL `https://wa.me/?text=...` por
-`https://wa.me/CODIGODEPAISNUMERO`, incluyendo el código de país y sin el signo `+`.
+El botón de WhatsApp abre directamente el chat con el número configurado y deja
+un mensaje listo para enviar.
 Si cambias clases de Tailwind, vuelve a ejecutar `npm run build`; para
 recompilar al guardar, usa `npm run watch`.
