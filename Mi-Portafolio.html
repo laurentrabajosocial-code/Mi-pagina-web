@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Lauren Manuela Taborda Bedoya: trabajo social, habilidades e intereses en desarrollo de software.">
 
-    <title>Mi Portafolio Personal LMTB</title>
+    <title>Sobre mí | Lauren Manuela Taborda Bedoya</title>
 
-    <!-- Conexión con Tailwind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 
 <body class="font-sans bg-[#F8F7F2] text-[#263C35]">
+    <header class="w-full">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4" aria-label="Navegación principal">
+            <a href="./Mi-Portafolio.html#inicio" class="flex items-center" aria-label="Logic Meets The Brain, inicio">
+                <img
+                    src="./img/Logo.jpeg"
+                    alt=""
+                    class="w-12 h-12 object-contain rounded-full"
+                >
+                <span class="ml-2 text-lg font-bold text-green-700">
+                    Logic Meets The Brain
+                </span>
+            </a>
 
-    <!-- ENCABEZADO -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+            <ul class="flex flex-wrap justify-center items-center gap-6 text-sm font-medium">
+                <li>
+                    <a href="./Mi-Portafolio.html#sobre-mi" class="hover:text-green-700 transition">
+                        Sobre mí
+                    </a>
+                </li>
+                <li>
+                    <a href="./proyectos.html" class="hover:text-green-700 transition">
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="hover:text-green-700 transition">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-
-        <!-- LOGO Y MARCA PERSONAL -->
-            <img
-                src="./img/Logo.jpeg"
-                alt="Logo personal de Lauren"
-                class="w-12 h-12 object-contain"
-            >
-
-        <!-- MENÚ -->
-        <ul class="flex items-center gap-6 text-sm font-medium">
-
-            <li>
-                <a href="#sobre-mi" class="hover:text-green-700 transition">
-                    Sobre mí
-                </a>
-            </li>
-
-            <li>
-                <a href="#proyectos" class="hover:text-green-700 transition">
-                    Proyectos
-                </a>
-            </li>
-
-            <li>
-                <a href="#contacto" class="hover:text-green-700 transition">
-                    Contacto
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</header>
     <main>
+        <section id="inicio" class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div id="sobre-mi">
+                    <p class="text-green-700 font-semibold mb-4">
+                        HOLA, BIENVENIDOS A MI PORTAFOLIO PERSONAL
+                    </p>
 
-    <!-- PRESENTACIÓN PERSONAL -->
-    <section id="Presentación" class="max-w-6xl mx-auto px-6 py-20">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                        Soy Lauren Manuela Taborda Bedoya.
+                    </h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <h2 class="text-xl text-gray-600 mb-6">
+                        Profesional en Trabajo Social | Estudiante de Desarrollo de Software
+                    </h2>
 
-            <!-- TEXTO DE PRESENTACIÓN -->
-            <div>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Me apasiona comprender al ser humano, explorar nuevos conocimientos y
+                        desarrollar soluciones que contribuyan al bienestar de las personas y
+                        al cuidado de nuestro entorno. En este espacio comparto mi recorrido,
+                        mis habilidades y los proyectos que voy construyendo.
+                    </p>
 
-                <p class="text-green-700 font-semibold mb-4">
-                    HOLA, BIENVENIDOS A MI PORTAFOLIO PERSONAL
-                </p>
+                    <a href="./proyectos.html" class="inline-flex items-center rounded-full bg-[#244C3D] px-6 py-3 text-sm font-semibold text-white hover:bg-green-700 transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-700">
+                        Explorar mis proyectos
+                    </a>
+                </div>
 
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                     <span class="text-green-700">Soy Lauren Manuela Taborda Bedoya.</span>
-                </h1>
-
-                <h2 class="text-xl text-gray-600 mb-6">
-                    Profesioanal Trabajadora Social | Estudiante de Desarrollo de Software
-                </h2>
-
-                <p class="text-gray-600 leading-relaxed mb-8">
-                    Me apasiona comprender al ser humano, explorar
-                    nuevos conocimientos y desarrollar soluciones
-                    que contribuyan al bienestar de las personas
-                    y al cuidado de nuestro entorno.
-                </p>
-
-
-            <!-- FOTOGRAFÍA -->
-            <div class="flex justify-center">
-
-                <img src="img/lauren.jpeg"
-                    alt="Fotografía de Lauren Manuela"
-                    class="w-72 h-80 object-cover rounded-2xl shadow-lg"
-                >   
-
+                <div class="flex justify-center md:justify-end">
+                    <img
+                        src="./img/lauren.jpeg"
+                        alt="Fotografía de Lauren Manuela Taborda Bedoya"
+                        class="w-64 h-72 md:w-80 md:h-96 object-cover rounded-2xl shadow-lg"
+                    >
+                </div>
             </div>
+        </section>
 
+        <section id="habilidades" class="bg-[#EDF1EA] px-6 py-16 md:py-20">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-[#A58B55] font-semibold text-sm tracking-widest mb-3">
+                    LO QUE ME MUEVE
+                </p>
+                <h2 class="text-3xl font-bold text-[#244C3D] mb-5">
+                    Habilidades e intereses
+                </h2>
+                <p class="text-gray-600 leading-relaxed max-w-3xl mb-10">
+                    Combino mi formación en trabajo social con mi interés por la tecnología
+                    para aprender, colaborar y aportar en proyectos con sentido.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-[#244C3D] mb-3">Trabajo social</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Escucha activa, comunicación empática y comprensión de contextos sociales.
+                        </p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-[#244C3D] mb-3">Colaboración</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Trabajo en equipo, diálogo y disposición para construir soluciones en conjunto.
+                        </p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-[#244C3D] mb-3">Desarrollo web</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Aprendizaje continuo en diseño y construcción de experiencias para la web.
+                        </p>
+                    </article>
+                    <article class="rounded-2xl bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-[#244C3D] mb-3">Pensamiento crítico</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Curiosidad, análisis y búsqueda de alternativas ante nuevos retos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="bg-[#263C35] text-white px-6 py-12 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-[#D7C89F] font-semibold text-sm tracking-widest mb-3">
+                CONECTEMOS
+            </p>
+            <h2 class="text-3xl font-bold mb-4">
+                Gracias por visitar mi portafolio
+            </h2>
+            <p class="text-white/80 mb-7">
+                ¡Me encantará conectar y compartir ideas!
+            </p>
+            <a
+                href="https://wa.me/?text=Hola%2C%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-[#173B2D] hover:bg-[#8BE0A8] transition focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+                Escríbeme por WhatsApp
+            </a>
+            <p class="text-xs text-white/60 mt-8">
+                © 2026 Lauren Manuela Taborda Bedoya. Todos los derechos reservados.
+            </p>
         </div>
-
-    </section>
-
-</main>
-
+    </footer>
 </body>
+
 </html>
